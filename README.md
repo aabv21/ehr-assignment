@@ -47,10 +47,10 @@ Note: use node js version 20.x or higher
 1. run npm install in both projects (frontend and backend)
 2. run the frontend with npm run dev
 3. run without any specific order:
-   3.1 npm start patient
-   3.2 npm start clinical
-   3.3 npm start ehr
-4. npm start to start the core/gateway
+4. npm start patient
+5. npm start clinical
+6. npm start ehr
+7. npm start to start the core/gateway
 
 Existing pages:
 
@@ -60,7 +60,7 @@ Existing pages:
 
 Explanation:
 
-A ## microservices-based architectural solution ## was used, as we can predict that given the business model, it could expand and scale quickly, which would make it necessary to modularize the services before it becomes more complicated later on. In addition many services may require scaling horinzotal in greater quantity than others, with microservices we can take care of scaling the services we want and in the amount we want, plus we can treat each service with different data structures or databases, which given the business model can be beneficial to run complex analytic queries in data warehouse and data lake (for analytics), fast access with non-SQL data, or more structured and secure data such as payments with relational database. Because of the complexity of the business model and the interconnection between all EHRs and patient data, it makes microservices an optimal solution for this type of business.
+A microservices-based architectural solution was used, as we can predict that given the business model, it could expand and scale quickly, which would make it necessary to modularize the services before it becomes more complicated later on. In addition many services may require scaling horinzotal in greater quantity than others, with microservices we can take care of scaling the services we want and in the amount we want, plus we can treat each service with different data structures or databases, which given the business model can be beneficial to run complex analytic queries in data warehouse and data lake (for analytics), fast access with non-SQL data, or more structured and secure data such as payments with relational database. Because of the complexity of the business model and the interconnection between all EHRs and patient data, it makes microservices an optimal solution for this type of business.
 
 I would apply TDD based implementation, this paradigm would allow us to generate unit, functional and integration tests.
 
